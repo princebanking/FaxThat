@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "Fax That",
+    "slug": "FaxThat",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "faxthat",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+
+    "assetBundlePatterns": ["**/*"],
+
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.goodnes.faxthat",
+      "infoPlist": {
+        "NSCameraUsageDescription": "FaxThat uses the camera to scan barcodes on clothing.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+
+    "android": {
+      "package": "com.goodnes.faxthat",
+      "permissions": ["CAMERA"],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#000000"
+      }
+    },
+
+    "web": {
+      "favicon": "./assets/icon.png"
+    },
+
+    "plugins": [
+      "expo-camera",
+      "expo-font",
+      "expo-web-browser"
+    ],
+
+    "extra": {
+      "eas": {
+        "projectId": "a289ca40-3aa2-4cd4-a945-981235c8614d"
+      }
+    },
+
+    "runtimeVersion": { "policy": "sdkVersion" },
+    "updates": { "fallbackToCacheTimeout": 0 },
+    "sdkVersion": "54.0.0"
+  }
+}
